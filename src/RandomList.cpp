@@ -31,7 +31,9 @@ void test() {
         
         // 释放内存
         delete head;
+        delete cur;
         head = NULL;
+        cur = NULL;
     }
     cout << "end" << endl;
 }
