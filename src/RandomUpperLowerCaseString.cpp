@@ -3,7 +3,7 @@ using namespace std;
 #include<ctime>
 #include<string>
 
-// 生成大小为size，只包含大小写字母的字符串
+// 生成大小为size，只包含大小写字母的随机字符串
 string randomUpperLowerCaseString(int size) {
     srand(time(0));
     string s = "";
