@@ -8,6 +8,7 @@ public:
     }
 };
 
+// 生成大小为size，数据范围在l~r的随机链表
 ListNode* randomList(int size, int l, int r) {
     srand(time(0));
     ListNode* head = new ListNode(rand() % (r - l + 1) + l);
