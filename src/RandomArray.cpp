@@ -6,9 +6,9 @@ using namespace std;
 // 生成大小为size，数据范围在l~r的随机数组
 vector<int> randomArray(int size, int l, int r) {
     srand(time(0));
-    vector<int>nums;
+    vector<int>nums(size);
     for (int i = 0; i < size; i++) {
-        nums.push_back(rand() % (r - l + 1) + l);
+        nums[i] = rand() % (r - l + 1) + l;
     }
     return nums;
 }
